@@ -1,0 +1,46 @@
+.row td {
+  vertical-align: middle;
+}
+
+
+/* Acciones */
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Botón eliminar */
+.delete {
+  background: #dc2626;
+}
+
+.delete:hover {
+  background: #b91c1c;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .row {
+    background: #1e293b;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 12px;
+  }
+
+  .row td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+
+  .row td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #93c5fd;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+}

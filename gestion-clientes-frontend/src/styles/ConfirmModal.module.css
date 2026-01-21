@@ -1,0 +1,63 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+
+.modal {
+  background: #020617;
+  color: #fff;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.message {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.confirm {
+  background: #2563eb;
+  min-width: 100px;
+}
+
+.cancel {
+  background: #dc2626;
+  min-width: 100px;
+}
+
+.cancel:hover {
+  background: #b91c1c;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column-reverse;
+  }
+
+  .confirm,
+  .cancel {
+    width: 100%;
+  }
+}

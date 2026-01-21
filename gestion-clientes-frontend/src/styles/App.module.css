@@ -1,0 +1,63 @@
+/* styles/app.module.css */
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+  background: #020617;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+.userInfo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.badge {
+  margin-left: 8px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin {
+  background: #7c3aed;
+}
+
+.user {
+  background: #2563eb;
+}
+
+/* ---------- MAIN ---------- */
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background: #020617;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.adminSection {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,31 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Desktop */
+@media (min-width: 640px) {
+  .form {
+    grid-template-columns: 2fr 2fr 2fr 1fr auto;
+    align-items: end;
+  }
+}
+
+.select {
+  padding: 10px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+.select:focus {
+  outline: 2px solid #2563eb;
+}
+
+.submit {
+  white-space: nowrap;
+}
