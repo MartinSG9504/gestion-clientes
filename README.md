@@ -131,7 +131,7 @@ CREATE TABLE clients (
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/gestion-clientes.git
+git clone git clone https://github.com/MartinSG9504/gestion-clientes.git
 ```
 
 ### Backend
